@@ -1,3 +1,4 @@
+#!/bin/bash
 
 date
 echo "starting compress95 in-order width 1, intalu 1, intmult 1, memprt 1"
