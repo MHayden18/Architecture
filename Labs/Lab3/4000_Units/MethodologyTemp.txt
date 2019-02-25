@@ -1,0 +1,29 @@
+Methodology:
+	- We selected Width of 2 for the 4000 Unit processor because using Width of 4 would prevent us from using out of order execution based on budget
+	
+	1) Ran baseline tests (full system) for each BPred & order --> 6 total tests; also ran bototmline tests for each BPred & order
+		- 2 Lev significantly outperformed the others regardless of FUs
+		- Out of order always beats in order for equivalent tests
+		- Compared individual FU increases to determine which FUs provided the best improvement --> IALUs were the only relative imporvement (everything else was equivalent increase)
+			(Full system 2 Lev equivalent to 4 ALUs everything else 1 for in order execution)
+			
+	2) 2600:
+		- Out of order not in budget
+		- 2 Lev selected based on baseline/bottomline tests
+		- Width 4 with all FUs 1 outperformed Width 2 with all FUs 2
+			Couldn't afford Width4 with any additional FUs (with 2 Lev BPred)
+			
+	
+	3) 5000:
+		- Looked at the optimal performance from 1)
+		- Tested with 4 IALUs, and was the closest to the baseline, so we started adding units to that configuration
+	
+	4) 4000:
+		- Could afford Out of order & 2Lev with width 2
+		- Width 2:
+			- 2 IALUs and 4 IALUs had the same performance
+		
+		- Ideally, we would add a memport - but it put us over budget.  
+				-Options:  
+				a) Add some FP units
+				b) Don't add something and save the space/cost

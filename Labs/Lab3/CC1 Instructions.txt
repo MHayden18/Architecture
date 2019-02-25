@@ -1,0 +1,13 @@
+CC1 Instruction Composition:
+sim_num_insn              279206660 # total number of instructions committed
+sim_num_refs              109068393 # total number of loads and stores committed
+sim_num_loads              70960051 # total number of loads committed
+sim_num_stores         38108342.0000 # total number of stores committed
+sim_num_branches           56241638 # total number of branches committed
+sim_elapsed_time                134 # total simulation time in seconds
+sim_inst_rate          2083631.7910 # simulation speed (in insts/sec)
+sim_total_insn            286159871 # total number of instructions executed
+sim_total_refs            112695879 # total number of loads and stores executed
+sim_total_loads            74380140 # total number of loads executed
+sim_total_stores       38315739.0000 # total number of stores executed
+sim_total_branches         56863731 # total number of branches executed
